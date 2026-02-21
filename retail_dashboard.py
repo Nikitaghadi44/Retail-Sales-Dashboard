@@ -10,7 +10,7 @@ st.set_page_config(page_title="Retail Sales Dashboard", layout="wide")
 def load_data():
     df = pd.read_csv("retail_sales_1000_rows.csv")
     df["Order_Date"] = pd.to_datetime(df["Order_Date"])
-    df["Month"] = df["Order_Date"].dt.month
+    df["Month"] = df["Order_Date"].dt.mont
     df["Year"] = df["Order_Date"].dt.year
 
     df["Age_Group"] = pd.cut(
