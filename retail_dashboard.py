@@ -38,7 +38,7 @@ col3.metric("📦 Avg Order Value", f"₹{avg_order_value:,.0f}")
 st.divider()
 
 # ---------------- FILTERS ----------------
-st.sidebar.header("🔍 Filters")
+st.sidebar.header("🔍 Filter")
 
 region_filter = st.sidebar.multiselect(
     "Select Region",
